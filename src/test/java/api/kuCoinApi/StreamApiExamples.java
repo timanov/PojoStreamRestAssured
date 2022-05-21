@@ -35,6 +35,13 @@ public class StreamApiExamples {
                 return o2.getChangeRate().compareTo(o1.getChangeRate());
             }
         }).collect(Collectors.toList());
+        List<TickerData> top10 = highToLow.stream().limit(10).collect(Collectors.toList());
+        Assertions.assertEquals(top10.get(0).getSymbol(), "COMB-USDT");
         int a = 9;
+    }
+
+    @Test
+    public void sortLowToHigh(){
+
     }
 }
