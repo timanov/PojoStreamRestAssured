@@ -15,13 +15,13 @@ public class TickerData {
     private String averagePrice;
     private String takerFeeRate;
     private String makerFeeRate;
-    private String takerCoefficlient;
-    private String makerCoefficlient;
+    private String takerCoefficient;
+    private String makerCoefficient;
 
     public TickerData() {
     }
 
-    public TickerData(String symbol, String symbolName, String buy, String sell, String changeRate, String changePrice, String high, String low, String vol, String volValue, String last, String averagePrice, String takerFeeRate, String makerFeeRate, String takerCoefficlient, String makerCoefficlient) {
+    public TickerData(String symbol, String symbolName, String buy, String sell, String changeRate, String changePrice, String high, String low, String vol, String volValue, String last, String averagePrice, String takerFeeRate, String makerFeeRate, String takerCoefficient, String makerCoefficient) {
         this.symbol = symbol;
         this.symbolName = symbolName;
         this.buy = buy;
@@ -36,8 +36,8 @@ public class TickerData {
         this.averagePrice = averagePrice;
         this.takerFeeRate = takerFeeRate;
         this.makerFeeRate = makerFeeRate;
-        this.takerCoefficlient = takerCoefficlient;
-        this.makerCoefficlient = makerCoefficlient;
+        this.takerCoefficient = takerCoefficient;
+        this.makerCoefficient = makerCoefficient;
     }
 
     public String getSymbol() {
@@ -96,11 +96,11 @@ public class TickerData {
         return makerFeeRate;
     }
 
-    public String getTakerCoefficlient() {
-        return takerCoefficlient;
+    public String gettakerCoefficient() {
+        return takerCoefficient;
     }
 
-    public String getMakerCoefficlient() {
-        return makerCoefficlient;
+    public String getmakerCoefficient() {
+        return makerCoefficient;
     }
 }
